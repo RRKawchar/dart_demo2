@@ -1,5 +1,6 @@
 void main(){
-
+var father = Father();
+father.methodTwo();
 }
 
 class GrandFather{
@@ -16,6 +17,10 @@ class GrandFather{
 
 class Father extends GrandFather{
   String name="Riyazur Rohman Kawchar";
+  @override
+  methodTwo() {
+    print("This is overriding method");
 
+  }
 
 }
